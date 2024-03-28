@@ -180,25 +180,48 @@ Exercise 12: FizzBuzz with arrays
 
 Complete Exercise 12 in the space below:
 */
-let fizz = [];
-let buzz = [];
-let fizzbuzz = [];
+// let fizz = [];
+// let buzz = [];
+// let fizzbuzz = [];
 
-for (const number of nums) {
-  if ((number % 3) === 0 && (number % 5) === 0) {
-    fizzbuzz.push(number);
-  } 
+// for (const number of nums) {
+//   if ((number % 3) === 0 && (number % 5) === 0) {
+//     fizzbuzz.push(number);
+//   } 
 
-  if (number % 3 === 0) {
-    fizz.push(number);
-  }
+//   if (number % 3 === 0) {
+//     fizz.push(number);
+//   }
 
-  if (number % 5 === 0) {
-    buzz.push(number);
-  }
-}
+//   if (number % 5 === 0) {
+//     buzz.push(number);
+//   }
+// }
 
-console.log('Exercise 12 Results:');
-console.log('  fizz:', fizz);
-console.log('  buzz:', buzz);
-console.log('  fizzbuzz:', fizzbuzz);
+// console.log('Exercise 12 Results:');
+// console.log('  fizz:', fizz);
+// console.log('  buzz:', buzz);
+// console.log('  fizzbuzz:', fizzbuzz);
+
+/*
+Exercise 13: Retrieve the Last Array
+
+1) Assign the last nested array in the `numArrays` below to a variable named
+   `numList`. As you do this, also fulfill these goals:
+
+   - Assume you don't know how many nested arrays `numArrays` contains.
+   - Do not alter the original `numArrays` array.
+
+Complete Exercise 13 in the space below:
+*/
+
+const numArrays = [
+	[100, 5, 23],
+	[15, 21, 72, 9],
+	[45, 66],
+	[7, 81, 90]
+];
+
+let numList = numArrays[numArrays.length - 1];
+
+console.log('Exercise 13 result:', numList);
