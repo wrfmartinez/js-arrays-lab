@@ -237,6 +237,6 @@ Exercise 14: Accessing within nested arrays
 Complete Exercise 14 in the space below:
 */
 
-const num = 
+const num = numArrays[2][1];
 
 console.log('Exercise 14 result:', num);
