@@ -222,7 +222,7 @@ const numArrays = [
 	[7, 81, 90]
 ];
 
-const numList = numArrays[numArrays.length - 1];
+// const numList = numArrays[numArrays.length - 1];
 
 // console.log('Exercise 13 result:', numList);
 
@@ -237,6 +237,29 @@ Exercise 14: Accessing within nested arrays
 Complete Exercise 14 in the space below:
 */
 
-const num = numArrays[2][1];
+// const num = numArrays[2][1];
 
-console.log('Exercise 14 result:', num);
+// console.log('Exercise 14 result:', num);
+
+/*
+Exercise 15: Nested array sum
+
+1) Use nested loops or `forEach()` methods to sum up all numbers within 
+   `numArrays` nested arrays.
+   
+2) Assign the sum to a variable called `total`.
+
+Hint: Be sure to declare and initialize the total variable before the iterations.
+
+Complete Exercise 15 in the space below:
+*/
+
+let total = 0;
+
+numArrays.forEach((currentArray) => {
+  for (const number of currentArray) {
+    total += number;
+  }
+});
+
+console.log('Exercise 15 result:\n', total);
